@@ -1,0 +1,450 @@
+/*
+Theme Name: comunicati
+Theme URI: http://www.comunicati.com.ar
+Description: Comuniati WordPress Theme
+Author: Fernando Jascovich
+Author URI: http://www.fernandojascovich.com.ar/
+Version: 0.1
+Tags: jQuery, slider, social-networks
+License: GNU General Public License v2.0 | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+@font-face {
+    font-family: 'OldPressRegular';
+    src: url('../comunicati/fonts/old_press-webFont.eot');
+    src: url('../comunicati/fonts/old_press-webFont.eot?#iefix') format('embedded-opentype'),
+         url('../comunicati/fonts/old_press-webFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OldTypographyRegular';
+    src: url('../comunicati/fonts/old_typography-webFont.eot');
+    src: url('../comunicati/fonts/old_typography-webFont.eot?#iefix') format('embedded-opentype'),
+         url('../comunicati/fonts/old_typography-webFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TodaySHOP-MediumRegular';
+    src: url('../comunicati/fonts/todayshop-medium-webFont.eot');
+    src: url('../comunicati/fonts/todayshop-medium-webFont.eot?#iefix') format('embedded-opentype'),
+         url('../comunicati/fonts/todayshop-medium-webFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TodaySHOP-LightRegular';
+    src: url('../comunicati/fonts/todayshop-light-webfont.eot');
+    src: url('../comunicati/fonts/todayshop-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../comunicati/fonts/todayshop-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background: url('../comunicati/img/bgDotted.gif') center repeat;
+	background-attachment: fixed;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.header {
+	margin-top: 6px;	
+}
+
+.topImages {
+	width: 960px;
+	margin: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.headerLogo {
+	margin: -18px 0px 0px 0px;
+}
+
+.headerSocial {
+	float: right;
+}
+
+.socialLogo {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.Facebook {
+	background-image: url('../comunicati/img/logo_fb_01.png');
+	background-position: top left;
+}
+
+.Twitter {
+	background-image: url('../comunicati/img/logo_tw_01.png');
+	background-position: top left;
+}
+
+.Flickr {
+	background-image: url('../comunicati/img/logo_fl_01.png');
+	background-position: top left;
+}
+
+.YouTube {
+	background-image: url('../comunicati/img/logo_yt_01.png');
+	background-position: top left;
+}
+
+.Contact {
+	background-image: url('../comunicati/img/logo_contact_01.png');
+	background-position: top left;
+}
+
+.Facebook:hover, .Twitter:hover, .Flickr:hover, .YouTube:hover, .Contact:hover {
+	background-position: top right;
+}
+
+.navBar {
+	background-color: #00AAD2;
+	height: 60px;
+	clear: both;
+	position: relative;
+	z-index: 1;
+	margin: -102px 0px 32px 0px;
+	box-shadow: 0px 0px 12px #000000;
+}
+
+.navBarItems {
+	position: relative;
+	top: -93px;
+	z-index: 2;	
+}
+
+.navBarItems > ul {
+	width: 960px;
+	margin: auto;
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 22px;
+	padding: 10px 0px 0px 0px;
+}
+
+.navBarItems > ul > li {
+	display: block;
+	float: left;
+	padding: 10px
+}
+
+.navBarItems > ul > li > a, .navBar > ul > li > a:hover, .navBar > ul > li > a:visited, .navBar > ul > li > a:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.navBarItems > ul > .firstItem {
+	margin-left: 300px;
+}
+
+.navBarItems > ul > li:hover {
+	background-color: #333333;
+	cursor: pointer;
+}
+
+.navBarItems > ul > .current {
+	background-color: #333333;
+}
+/* End of Header */
+
+/* Footer */
+.footerContainer {
+	clear: both;
+	position: relative;
+	background-color: #00AAD2;
+	height: 292px;
+	overflow: hidden;
+	box-shadow: 0px -2px 14px #000000;
+}
+
+.footerTitle {
+	width: 960px;
+	margin: auto;
+	text-align: center;
+	font-family: "OldPressRegular";
+	font-size: 48px;
+	color: #333333;
+	padding: 10px;
+}
+
+.footerBar {
+	height: 23px;
+	background: url('../comunicati/img/bgStriped.gif') center repeat;
+	margin: 10px 0px 20px 0px;
+	opacity: 0.5;
+}
+
+.footerMenuContainer {
+	width: 960px;
+	margin: auto;
+	padding: 0px 0px 0px 220px;
+}
+
+.footerMenuContainer > img, .location > img {
+	float: left;
+}
+
+.footerMenuContainer > ul, .location > ul {
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 18px;
+	text-align: left;
+	display: block;
+	width: 16%;
+	height: 126px;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px solid #666;
+}
+
+.footerMenuContainer > ul > li {
+	display: block;
+}
+
+.footerMenuContainer > ul > li > a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footerMenuContainer > ul > li > a:hover {
+	color: #333333;	
+}
+
+.googleMap {
+	margin: 0px 10px 0px 40px;
+	width: 180px;
+	height: 126px;
+	background-color: #fff;
+	float: left;
+}
+
+.location > ul {
+	width: 18%;
+	line-height: 22px;
+}
+
+.blackFB {
+	background-image: url('../comunicati/img/logo_fb_02.png');
+	background-position: top left;
+}
+
+.blackTW {
+	background-image: url('../comunicati/img/logo_tw_02.png');
+	background-position: top left;
+}
+
+.blackFL {
+	background-image: url('../comunicati/img/logo_fl_02.png');
+	background-position: top left;
+}
+
+.blackYT {
+	background-image: url('../comunicati/img/logo_yt_02.png');
+	background-position: top left;
+}
+
+.socialFooter {
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+
+.footerSocial {
+	display:block;	
+	width: 35px;
+	height: 35px;
+	margin: 0px 4px 11px 0px;
+}
+
+.blackFB:hover, .blackTW:hover, .blackFL:hover, .blackYT:hover {
+	background-position: top right;
+}
+
+.footerEnd {
+	clear:both;
+	text-align: center;
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 16px;
+	color: #333333;
+	border-top: 1px solid #333333;
+	padding: 8px;
+}
+
+.gmnoprint {
+	display: none;
+}
+/* Footer End */
+/*Scroll Buttons*/
+.scrollUpButton {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: url('../comunicati/img/scrollUpButton.png') top left no-repeat;
+	width: 99px;
+	height: 52px;
+	cursor: pointer;
+	display: none;
+	z-index: 10;
+}
+
+.scrollDownButton {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background: url('../comunicati/img/scrollDownButton.png') top left no-repeat;
+	width: 99px;
+	height: 52px;
+	cursor: pointer;
+	display: none;
+	z-index: 10;
+}
+
+.scrollDownButton:hover, .scrollUpButton:hover {
+	background-position: top right;
+}
+/* Scroll Buttons End */
+/* single Post */
+.postWidthLimiter {
+	width: 660px;
+	float: left;
+	position: relative;
+	top: -50px;
+}
+
+.postTitle {
+	clear: both;
+	font-family: "OldPressRegular";
+	font-size: 48px;
+	text-align: left;
+	margin-top: -6px;
+}
+
+.postContent {
+	padding-bottom: 40px;
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 15px;
+	line-height: 17px;
+	text-align: left;
+}
+
+.postContent > h2 {
+	font-size: 24px;
+}
+
+.postContent > h3 {
+	font-size: 20px;
+	margin-top: 10px;	
+}
+
+.postContent > h3 > a {
+	color: white;
+	text-decoration: none;
+	background-color: #00AAD2;
+	padding: 6px;
+}
+
+.postContent > h3 > a:hover {
+	background-color: #333333;
+}
+
+.postSlider {
+	width: 660px;
+	height: 410px;
+	overflow: hidden;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	margin-bottom: -50px;
+}
+
+.businessUnit {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	padding: 0px 0px 0px 0px;
+	clear: both;
+}
+
+.businessUnit h1 {
+	float: left;
+	width: 228px;
+	height: 100%;
+	font-family: "OldTypographyRegular";
+    font-size: 46px;
+    line-height: 193px;
+    text-align: center;
+}
+
+.businessUnit p {
+	position: absolute;
+	top: 0px;
+	left: 240px;
+	width: 680px;
+	height: 175px;
+	background-color: #333333;
+	color: #ffffff;
+	font-family: "TodaySHOP-LightRegular";
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.businessUnit > .cuore {
+	background: url('./img/logo-cuore-001.jpg') top left no-repeat;	
+}
+
+.businessUnit > .teens {
+	background: url('./img/logo-teens-001.jpg') top left no-repeat;
+}
+
+.limiter form {
+	width: 344px;
+	margin: auto;
+}
+
+.limiter form p {
+	clear: both;
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 21px;
+	line-height: 17px;
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+}
+
+.limiter form p input, .limiter form p textarea {
+	font-family: "TodaySHOP-LightRegular";
+	font-size: 19px;
+	color: #00AAD2;
+	width: 342px;
+}
+
+.notFound {
+	margin: 0px 0px 80px 0px;
+}
+
+.notFound.left {
+	display: inline-block;
+	width: 167;
+	height: 229;
+}
+
+.notFound.right {
+	font-family: "TodaySHOP-LightRegular";
+    font-size: 24px;
+    padding: 42px;
+}
