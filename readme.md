@@ -1,4 +1,4 @@
-In this repo you'll be find two codes:
+In this repo you'll be find the following codes:
 
 papervision-carrousel
 It's a WordPress page template that takes info from page custom fields and serve that to an as3 made with papervision. The main objective was to let the client makes easy changes from WordPress profile.
